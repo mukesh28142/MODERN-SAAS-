@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCALE UP(SAAS)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #111827;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: #4f46e5;
+            letter-spacing: -1px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            margin-left: 25px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 5%;
+            background: radial-gradient(circle at top, #f5f3ff 0%, #ffffff 50%);
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 24px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: #4f46e5;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #6b7280;
+            max-width: 650px;
+            margin: 0 auto 40px auto;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-main {
+            background-color: #4f46e5;
+            color: rgb(255, 255, 255);
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+        }
+
+        .features {
+            display: flex;
+            gap: 24px;
+            padding: 60px 8%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            width: 320px;
+            border: 1px solid #f3f4f6;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #e5e7eb;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 38px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">SCALE UP</div>
+        <div class="nav-links">
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
+            <a href="#">About</a>
+            <a href="#" class="btn-main" style="padding: 10px 20px; border-radius: 6px; margin-left: 20px; color: white;">Sign Up</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Work smarter with <br> <span>AI automation.</span></h1>
+        <p>The next generation platform for teams to build, ship, and scale their ideas without touching a single line of server code.</p>
+        <a href="#" class="btn btn-main">Get started for free</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>Real-time Sync</h3>
+            <p>Collaborate with your entire team instantly with zero latency across all devices.</p>
+        </div>
+        <div class="card">
+            <h3>Smart Filters</h3>
+            <p>Use our proprietary AI to sort through thousands of tasks in seconds.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Native</h3>
+            <p>Built from the ground up for speed, reliability, and worldwide availability.</p>
+        </div>
+    </section>
+
+</body>
+</html>
